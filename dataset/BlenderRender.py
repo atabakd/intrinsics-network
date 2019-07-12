@@ -26,7 +26,7 @@ class BlenderRender:
         bpy.context.scene.render.filepath = os.path.join(path, name + '.' + extension)
         bpy.ops.render.render(write_still = True)
 
-    def switchToGPU(self, vebose = True):
+    def switchToGPU(self, verbose = True):
         if verbose:
             print('before changing settings: ', bpy.context.scene.cycles.device)
         bpy.data.scenes['Scene'].cycles.samples=20
