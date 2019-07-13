@@ -8,8 +8,7 @@ from dataset import DatasetRender
 
 class ShapeNetRender(DatasetRender):
 
-    def __init__(self, shapenet_path, staging_path, write_path, create=False):
+    def __init__(self, shapenet_path, staging_path, write_path):
         super().__init__(dataset_path = shapenet_path,
                          staging_path = staging_path,
-                         write_path = write_path,
-                         create = create)
+                         write_path = write_path)
